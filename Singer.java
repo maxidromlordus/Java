@@ -1,0 +1,16 @@
+public class Singer {
+
+    public  static int maxRating = 0;
+    public String name;
+    public int age;
+    public int rating;
+
+    public Singer(String name, int age, int rating) {
+        this.name = name;
+        this.age = age;
+        this.rating = rating;
+        maxRating = Math.max(maxRating, rating);
+        System.out.println(name + " " + age + " " + rating);
+    }
+
+}
